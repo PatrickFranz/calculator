@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/clear.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">-->
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/main-style.css" type="text/css">
+    <link rel="stylesheet" href="css/main-style.css" type="text/css">
 </head>
 
 <body>
@@ -28,65 +28,61 @@
         <h2>
 <a id="web-component---calculator" class="anchor" href="#web-component---calculator" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Web Component - Calculator</h2>
     </section>
-        <div id="calculator">
-
-            <section id='calc-body'>
-                <div id='screen'>0</div>
-                <section id='btn-numbers'>
-                    <ul>
-                        <li class='button btn-num'>1</li>
-                        <li class='button btn-num'>2</li>
-                        <li class='button btn-num'>3</li>
-                    </ul>
-                    <br>
-                    <ul>
-                        <li class='button btn-num'>4</li>
-                        <li class='button btn-num'>5</li>
-                        <li class='button btn-num'>6</li>
-                    </ul>
-                    <br>
-                    <ul>
-                        <li class='button btn-num'>7</li>
-                        <li class='button btn-num'>8</li>
-                        <li class='button btn-num'>9</li>
-                    </ul>
-                    <br>
-                    <ul>
-                        <li class='button btn-num'>.</li>
-                        <li class='button btn-num'>0</li>
-                        <li class='button btn-op'>=</li>
-                    </ul>
-                </section>
-                <section id='btn-operations'>
-                    <ul>
-                        <li class='button btn-op'>+</li>
-                        <li class='button btn-fn md-text'>DEL</li>
-                    </ul>
-                    <br>
-                    <ul>
-                        <li class='button btn-op'>-</li>
-                        <li class='button btn-fn sm-text'>CLEAR</li>
-                    </ul>
-                    <br>
-                    <ul>
-                        <li class='button btn-op'>x</li>
-                        <li class='button btn-fn'>M&nbsp;</li>
-                    </ul>
-                    <br>
-                    <ul>
-                        <li class='button btn-op'>&divide;</li>
-                        <li class='button btn-fn'>M+</li>
-                    </ul>
-                </section>
-
-                <section id='bottom'>
-                    &nbsp;
-                </section>
-
-            </section>
-
-        </div>
-        <section class="main-content">
+    <section id='calc-body'>
+        <div id='screen'>0</div>
+        <section id='btn-numbers'>
+            <ul>
+                <li class='button btn-num'>1</li>
+                <li class='button btn-num'>2</li>
+                <li class='button btn-num'>3</li>  
+            </ul>
+            <br>
+            <ul>       
+                <li class='button btn-num'>4</li>
+                <li class='button btn-num'>5</li>
+                <li class='button btn-num'>6</li>
+            </ul>
+            <br>
+            <ul>         
+                <li class='button btn-num'>7</li>
+                <li class='button btn-num'>8</li>
+                <li class='button btn-num'>9</li>
+             </ul>
+             <br>
+             <ul>
+                 <li class='button btn-num'>.</li>
+                 <li class='button btn-num'>0</li>
+                 <li class='button btn-op'>=</li>
+             </ul>  
+        </section>
+        <section id='btn-operations'>
+            <ul>
+                <li class='button btn-op'>+</li>
+                <li class='button btn-fn md-text'>DEL</li>
+            </ul>
+            <br>
+            <ul>
+                <li class='button btn-op'>-</li>
+                <li class='button btn-fn md-text'>CLS</li>
+            </ul>
+            <br>
+            <ul>
+                <li class='button btn-op'>x</li>
+                <li class='button btn-fn md-text'>CLR</li>
+            </ul>
+            <br>
+            <ul>
+                <li class='button btn-op'>&divide;</li>
+                <li class='button btn-fn'></li>
+            </ul>
+        </section>
+        <section id='bottom'>
+            &nbsp;
+        </section>
+        
+    </section>
+    <script src="js/calc.js"></script>
+    <section class="main-content">
         <footer class="site-footer">
             <span class="site-footer-owner"><a href="https://github.com/PatrickFranz/calculator">Calculator</a> is maintained by <a href="https://github.com/PatrickFranz">PatrickFranz</a>.</span>
 

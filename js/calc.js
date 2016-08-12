@@ -1,5 +1,6 @@
 var screen = document.getElementById('screen');
 var buttons = document.getElementsByClassName('button');
+var dispOp = document.getElementById('disp-op');
 var screenVal = screen.innerHTML;
 var hasDecimal = false;
 var inputs = [];
@@ -77,12 +78,16 @@ function processClick(inp){
     //Calc functions
     case 'DEL':
       screenVal = screenVal.slice(0, screenVal.length -1);
+      dispOp.innerHTML = "";
       break;
     case 'CLS':
       screenVal = '0';
+      dispOp.innerHTML = "";
       break;
     case 'CLR':
       inputs = [];
+      screenVal = '0';
+      dispOp.innerHTML = "";
       break;
     
     case 'M+':
@@ -125,6 +130,7 @@ function makeExpr(op){
   inputs.push(screenVal);
   inputs.push(op);
   screenVal = '0';
+  dispOp.innerHTML = op;
 }
 
 function calculate(){
@@ -132,4 +138,5 @@ function calculate(){
   result = eval(inputs.join(''));
   inputs = [];
   screenVal = result.toString();
+  dispOp.innerHTML = '=';
 }

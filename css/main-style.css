@@ -2,6 +2,7 @@ html{
     box-sizing: border-box;
     margin:  0;
     padding: 0;
+    user-select: none;
     font-family: 'Cousine', Courier New, monospace;
 }
 
@@ -9,11 +10,14 @@ ul{
     display: inline-flex;
 }
 
+#calc-container{ 
+  display: flex;
+  justify-content: center; 
+}
+
 #calc-body{
     position: relative;
-    background-image: url('../images/lightblue.png');
-    margin: 0 auto;
-    width: 28rem;
+    background: #bdc3c7;
     padding: 1rem;
 }
 
@@ -84,7 +88,7 @@ ul{
 }
 
 .button:active{
-    background: purple;
+    background: #2980b9;
 }
 
 .sm-text{
@@ -93,4 +97,40 @@ ul{
 
 .md-text{
     font-size: 1.5em;
+}
+
+@media (max-width:600px){
+  .button{
+    padding: 5px 10px;
+    margin:  3px 4px;
+    font-size: 1em; 
+  }
+
+  .btn-fn{
+    min-width: 2rem;
+    max-width: 2rem;
+  }
+
+  #screen{    
+    font-size: 2em;
+    width: 230px;
+    min-height: 2rem;
+    margin: 8px;
+    padding: 5px 10px; 
+  }
+
+  #disp-op{
+    top: 2.5rem;
+    left: 2rem;
+  }
+
+  #btn-numbers{
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width:360px) {
+  #btn-numbers{
+    padding-left: 1rem;
+  }
 }
